@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./words.js" defer></script>
+        <script src="./main.js" defer></script>
+        <title>Tabu</title>
+    </head>
+    <body>
+        <h1>Tabu</h1>
+        <br>
+
+        <h3>Score</h3>
+        <div class="row">
+            <h1 id="score0" style="color: lightgreen;"></h1>
+            <h1 id="score1" style="color: lightgreen;"></h1>
+        </div>
+        <br>
+
+        <h3>Word</h3>
+        <div id="currWord" style="text-align: center;">
+            <p id="targetWord" style="color: lightblue;"></p>
+            <p id="tabu0" style="color: pink;"></p>
+            <p id="tabu1" style="color: pink;"></p>
+            <p id="tabu2" style="color: pink;"></p>
+            <p id="tabu3" style="color: pink;"></p>
+            <p id="tabu4" style="color: pink;"></p>
+        </div>
+        <br>
+
+        <div id="buttons" class="row">
+            <p onclick="playNextWord(false)" class="click">Next</p>
+            <p onclick="playNextWord(true)" class="click">Skip</p>
+        </div>
+    </body>
+</html>

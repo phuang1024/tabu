@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-family: Ubuntu, Arial;
+    margin: 0em;
+    min-height: 100%;
+    padding: 100px;
+}
+
+br {
+    margin-bottom: 80px;
+}
+
+h1, h2, h3, p, a {
+    color: #dddddd;
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 120px;
+}
+
+h3 {
+    font-size: 90px;
+}
+
+p, a {
+    font-size: 60px;
+}
+
+a, .click {
+    text-decoration: underline;
+}
+
+.click {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
