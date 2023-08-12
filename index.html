@@ -10,27 +10,38 @@
         <h1>Tabu</h1>
         <br>
 
-        <h3>Score</h3>
-        <div class="row">
-            <h1 id="score0" style="color: lightgreen;"></h1>
-            <h1 id="score1" style="color: lightgreen;"></h1>
+        <div id="timer">
+            <h2 id="timeLeft" style="color: lightblue"></h2>
+            <br>
         </div>
-        <br>
 
-        <h3>Word</h3>
+        <div id="score">
+            <h3>Score</h3>
+            <div class="row">
+                <h1 id="score0" style="color: lightgreen;"></h1>
+                <h1 id="score1" style="color: lightgreen;"></h1>
+            </div>
+            <br>
+        </div>
+
         <div id="currWord" style="text-align: center;">
+            <h3>Word</h3>
             <p id="targetWord" style="color: lightblue;"></p>
             <p id="tabu0" style="color: pink;"></p>
             <p id="tabu1" style="color: pink;"></p>
             <p id="tabu2" style="color: pink;"></p>
             <p id="tabu3" style="color: pink;"></p>
             <p id="tabu4" style="color: pink;"></p>
+            <br>
         </div>
-        <br>
 
         <div id="buttons" class="row">
             <p onclick="playNextWord(false)" class="click">Next</p>
             <p onclick="playNextWord(true)" class="click">Skip</p>
+        </div>
+
+        <div id="startButton">
+            <p onclick="startGame()" class="click">Start</p>
         </div>
     </body>
 </html>

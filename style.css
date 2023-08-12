@@ -7,7 +7,7 @@ body {
 }
 
 br {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 h1, h2, h3, p, a {
@@ -29,11 +29,13 @@ h3 {
     font-size: 90px;
 }
 
-p, a {
+p {
     font-size: 60px;
+    margin: 10px;
 }
 
 a, .click {
+    font-size: 70px;
     text-decoration: underline;
 }
 
@@ -44,6 +46,5 @@ a, .click {
 
 .row {
     display: flex;
-    gap: 40px;
     justify-content: center;
 }
