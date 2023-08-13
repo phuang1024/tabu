@@ -40,11 +40,12 @@ a, .click {
 }
 
 .click {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .row {
     display: flex;
+    gap: 40px;
     justify-content: center;
 }
