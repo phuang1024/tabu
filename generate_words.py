@@ -1,18 +1,18 @@
 """
-Convert CSV to words.js
+Convert TSV to words.js
 """
 
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("csv", help="CSV file to convert")
+parser.add_argument("tsv", help="tab separated value file to convert")
 args = parser.parse_args()
 
 words = []
-with open(args.csv, "r") as f:
+with open(args.tsv, "r") as f:
     for line in f:
         line = line.replace('"', "").replace("'", "")
-        parts = line.strip().split(",")
+        parts = line.strip().split("\t")
         if len(parts[0]) > 0 and parts[0] != "Timestamp":
             words.append(parts)
 
