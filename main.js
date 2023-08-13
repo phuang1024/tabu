@@ -69,6 +69,15 @@ function setPlaying(playing) {
         get("startButton").style.display = "block";
         get("timer").style.display = "none";
     }
+
+    // this is reversed bc we highlight the next player
+    if (turn == 1) {
+        document.getElementById("score0").style.color = "lightgreen";
+        document.getElementById("score1").style.color = "gray";
+    } else {
+        document.getElementById("score0").style.color = "gray";
+        document.getElementById("score1").style.color = "lightgreen";
+    }
 }
 
 // `word` is array of length 7.
