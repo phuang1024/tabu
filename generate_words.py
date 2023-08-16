@@ -12,7 +12,7 @@ words = []
 with open(args.tsv, "r") as f:
     for line in f:
         line = line.replace('"', "").replace("'", "")
-        parts = line.strip().split("\t")
+        parts = line.strip().split("\t")[:8]
         if len(parts[0]) > 0 and parts[0] != "Timestamp":
             words.append(parts)
 

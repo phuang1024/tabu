@@ -7,13 +7,13 @@ body {
 }
 
 br {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, label {
     color: #dddddd;
     font-weight: 400;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ h3 {
     font-size: 90px;
 }
 
-p {
+p, label {
     font-size: 60px;
     margin: 10px;
 }
@@ -37,6 +37,25 @@ p {
 a, .click {
     font-size: 70px;
     text-decoration: underline;
+}
+
+select {
+    background-color: black;
+    border: 5px solid #dddddd;
+    border-radius: 20px;
+    color: #dddddd;
+    font-family: Ubuntu, Arial;
+    font-size: 50px;
+    margin: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.small {
+    font-size: 40px;
 }
 
 .click {
