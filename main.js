@@ -70,6 +70,8 @@ function updateCategory() {
     }
 
     document.getElementById("wordCount").innerHTML = "Total words: " + CURR_WORDS.length;
+
+    wordIndex = -1;
 }
 
 function startGame() {
