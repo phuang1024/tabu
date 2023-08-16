@@ -80,6 +80,8 @@ function startGame() {
     timer();
     timerRun = setInterval(timer, 1000);
 
+    updateCategory();
+
     setCurrWord(getNextWord());
 }
 
