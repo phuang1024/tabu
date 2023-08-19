@@ -1,4 +1,5 @@
 let wordIndex = -1;
+let currCategory = null;
 
 let turn = 1;
 let score = [0, 0];
@@ -72,6 +73,7 @@ function updateCategory() {
     document.getElementById("wordCount").innerHTML = "Total words: " + CURR_WORDS.length;
 
     wordIndex = -1;
+    currCategory = category;
 }
 
 function startGame() {
@@ -82,7 +84,8 @@ function startGame() {
     timer();
     timerRun = setInterval(timer, 1000);
 
-    updateCategory();
+    if (currCategory != document.getElementById("category").value)
+        updateCategory();
 
     setCurrWord(getNextWord());
 }
